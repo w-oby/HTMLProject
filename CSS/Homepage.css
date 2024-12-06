@@ -1,0 +1,17 @@
+.NavBar {
+    list-style-type: none;
+    text-align: center;
+}
+
+.NavLink {
+    display: inline;
+}
+
+.footer {
+    text-align: center;
+}
+
+.Hamburger {
+
+}
+
