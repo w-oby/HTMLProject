@@ -17,7 +17,14 @@
                 <li class="NavLink"><a href="">Link 2</a></li>
                 <li class="NavLink"><a href="">Link 3</a></li>
                 <li class="NavLink"><a href="">Link 4</a></li>
-            </ul>
+                <li>
+                    <div class="HamburgerButton" onclick="HamburgerAnimatie(this)">
+                        <div class="Streep1"></div>
+                        <div class="Streep2"></div>
+                        <div class="Streep3"></div>
+                    </div>   
+                </li>
+            </ul> <!-- Hamburger Menu op juiste plek zetten -->
 
             <a href="./JavaScript/Homepage.js" class="Hamburger" onclick="FunctieHamburger"></a>
         </nav>
@@ -28,10 +35,11 @@
         <p>Op TOVOvA streven wij naar gelijke leerkansen voor elk leerling. Zo bereiden ze zich op voor de grote spannende wereld, met diens uitdagingen</p>
     </header>
 
-    <div>
-        
-    </div>
-
+      <script>
+            function HamburgerAnimatie(x) {
+                x.classList.toggle("HamburgerAnimatie");
+            } 
+      </script>
 
     <div>
         <footer class="footer">Copyright 2024 - Technisch Openbaar Voortgezet Onderwijs van Amsterdam</footer>
