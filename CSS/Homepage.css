@@ -2,6 +2,12 @@
     list-style-type: none;
     text-align: center;
     position: sticky;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.NavBar a {
+    text-decoration: none;
 }
 
 .NavBar a:hover {
@@ -11,11 +17,19 @@
 }
 
 .NavLink {
-    display: inline;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 75px;
+    padding-top: 0px;
 }
 
 .footer {
     text-align: center;
+}
+
+.HamburgerLi {
+    float: right;
+    margin-right: 150px;
 }
 
 .Hamburger {
@@ -23,26 +37,38 @@
 }
 
 .HamburgerButton {
-    display: inline;
+    
     cursor: pointer;
-  }
+}
 
-  .Streep1, .Streep2, .Streep3 {
+.Streep1, .Streep2, .Streep3 {
     width: 35px;
     height: 5px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
-  }
+}
 
-  .HamburgerAnimatie .Streep1 {
+.HamburgerAnimatie .Streep1 {
     transform: translate(0, 11px) rotate(-45deg);
-  }
+}
 
-  .HamburgerAnimatie .Streep2 {
+.HamburgerAnimatie .Streep2 {
     opacity: 0;
 }
 
 .HamburgerAnimatie .Streep3 {
     transform: translate(0, -11px) rotate(45deg);
-  }
+}
+
+.hamburgerMenu {
+    display: none;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.hamburgerMenu.active {
+    display: block;
+    text-align: center;
+}

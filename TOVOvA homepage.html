@@ -5,45 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOVOvA</title>
     <link rel="stylesheet" href="./CSS/Homepage.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="./Images/polygon 5 without BG.png">
 </head>
 <body>
-    <div>
-        <nav>
-            <ul class="NavBar">
-                <li class="NavLink"><a href="">Link op logo</a></li>
-                <li class="NavLink"><a href="">Banner</a></li>
-                <li class="NavLink"><a href="">Link 1</a></li>
-                <li class="NavLink"><a href="">Link 2</a></li>
-                <li class="NavLink"><a href="">Link 3</a></li>
-                <li class="NavLink"><a href="">Link 4</a></li>
-                <li>
-                    <div class="HamburgerButton" onclick="HamburgerAnimatie(this)">
-                        <div class="Streep1"></div>
-                        <div class="Streep2"></div>
-                        <div class="Streep3"></div>
-                    </div>   
-                </li>
-            </ul> <!-- Hamburger Menu op juiste plek zetten -->
-
-            <a href="./JavaScript/Homepage.js" class="Hamburger" onclick="FunctieHamburger"></a>
-        </nav>
-    </div>
     <header>
+        <div>
+            <nav>
+                <ul class="NavBar">
+                    <li class="NavLink"><a href="./TOVOvA homepage.html"><img src="./Images/polygon 5 without BG.png" alt="Polygon logo V" height="30px" width="30px"></a></li>
+                    <li class="NavLink"><a href="">TOVOvA Banner</a></li>
+                    <li class="NavLink"><a href="">Link 1</a></li>
+                    <li class="NavLink"><a href="">Link 2</a></li>
+                    <li class="NavLink"><a href="">Link 3</a></li>
+                    <li class="NavLink"><a href="">Link 4</a></li>
+                    <li class="NavLink HamburgerLi">
+                        <div class="HamburgerButton" onclick="HamburgerAnimatie(this)">
+                            <div class="Streep1"></div>
+                            <div class="Streep2"></div>
+                            <div class="Streep3"></div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="hamburgerMenu" id="hamburgerMenu">
+                    <li><a href="https://www.google.com">Google.com</a></li>
+                    <li><a href="https://www.facebook.com">Facebook.com</a></li>
+                    <li><a href="https://www.whatsapp.com">Whatsapp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
         <h1>TOVOvA</h1>
         <h3>Technisch Openbaar Voortgezet Onderwijs van Amsterdam</h3>
         <p>Op TOVOvA streven wij naar gelijke leerkansen voor elk leerling. Zo bereiden ze zich op voor de grote spannende wereld, met diens uitdagingen</p>
-    </header>
 
-      <script>
-            function HamburgerAnimatie(x) {
-                x.classList.toggle("HamburgerAnimatie");
-            } 
-      </script>
+    
 
     <div>
         <footer class="footer">Copyright 2024 - Technisch Openbaar Voortgezet Onderwijs van Amsterdam</footer>
     </div>
+
+  <script>
+            function HamburgerAnimatie(x) {
+                x.classList.toggle("HamburgerAnimatie");
+                let hamburgerMenu = document.getElementById("hamburgerMenu");
+                hamburgerMenu.classList.toggle("active")
+            } 
+      </script>
 
 </body>
 </html>
