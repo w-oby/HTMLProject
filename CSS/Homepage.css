@@ -23,7 +23,7 @@
     padding-top: 0px;
 }
 
-.footer {
+.copyrightFooter {
     text-align: center;
 }
 
@@ -111,4 +111,8 @@
 .hamburgerOverlay.show {
     display: block;
     opacity: 1;
+}
+
+.eindpaginaFooter {
+    
 }
