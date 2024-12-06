@@ -27,12 +27,12 @@
     text-align: center;
 }
 
-.HamburgerLi {
+.hamburgerLi {
     float: right;
     margin-right: 150px;
 }
 
-.HamburgerButton {
+.hamburgerButton {
     cursor: pointer;
 }
 
@@ -44,23 +44,23 @@
     transition: 0.4s;
 }
 
-.HamburgerAnimatie .Streep1 {
+.hamburgerAnimatie .Streep1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
 
-.HamburgerAnimatie .Streep2 {
+.hamburgerAnimatie .Streep2 {
     opacity: 0;
 }
 
-.HamburgerAnimatie .Streep3 {
+.hamburgerAnimatie .Streep3 {
     transform: translate(0, -11px) rotate(45deg);
 }
 
 .hamburgerMenu {
-    display: none;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
+    color: white;
 }
 
 .hamburgerMenu.active {
@@ -68,8 +68,47 @@
     text-align: center;
 }
 
-.HeroImg {
-    background-image: url();
+.heroImg {
+    background-image: url("../Images/heroimage3.jpg");
     background-position: center;
     background-size: cover;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    zoom: 120%;
+    text-shadow: 3px 3px black;
+    position: relative;
+    z-index: -1;
+}
+
+.heroText {
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburgerOverlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    text-align: center;
+    padding-top: 45px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.hamburgerMenu li {
+    margin: 20px 0px;
+}
+
+.hamburgerMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburgerOverlay.show {
+    display: block;
+    opacity: 1;
 }

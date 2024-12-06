@@ -18,26 +18,27 @@
                     <li class="NavLink"><a href="">Link 2</a></li>
                     <li class="NavLink"><a href="">Link 3</a></li>
                     <li class="NavLink"><a href="">Link 4</a></li>
-                    <li class="NavLink HamburgerLi">
-                        <div class="HamburgerButton" onclick="HamburgerAnimatie(this)">
+                    <li class="NavLink hamburgerLi">
+                        <div class="hamburgerButton" onclick="hamburgerAnimatie(this)">
                             <div class="Streep1"></div>
                             <div class="Streep2"></div>
                             <div class="Streep3"></div>
                         </div>
                     </li>
                 </ul>
-
-                <ul class="hamburgerMenu" id="hamburgerMenu">
-                    <li><a href="https://www.google.com">Google.com</a></li>
-                    <li><a href="https://www.facebook.com">Facebook.com</a></li>
-                    <li><a href="https://www.whatsapp.com">Whatsapp</a></li>
-                </ul>
+                <div class="hamburgerOverlay" id="hamburgerOverlay">
+                    <ul class="hamburgerMenu" id="hamburgerMenu">
+                        <li><a href="https://www.google.com">Google.com</a></li>
+                        <li><a href="https://www.facebook.com">Facebook.com</a></li>
+                        <li><a href="https://www.whatsapp.com">Whatsapp</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
 
-    <div class="HeroImg">
-        <div class="HeroText">
+    <div class="heroImg">
+        <div class="heroText">
             <h1>Welkom bij de site van TOVOvA!</h1>
             <h3>Technisch Openbaar Voortgezet Onderwijs van Amsterdam</h3>
             <p>Op TOVOvA streven wij naar gelijke leerkansen voor elk leerling. Zo bereiden ze zich op voor de spannende uitdagingen van de grote wereld.</p>
@@ -45,19 +46,30 @@
     </div>
 
 
-    
+
 
     <div>
         <footer class="footer">Copyright 2024 - Technisch Openbaar Voortgezet Onderwijs van Amsterdam</footer>
     </div>
 
-  <script>
-            function HamburgerAnimatie(x) {
-                x.classList.toggle("HamburgerAnimatie");
-                let hamburgerMenu = document.getElementById("hamburgerMenu");
-                hamburgerMenu.classList.toggle("active")
-            } 
-      </script>
+    <script>
+        function hamburgerAnimatie(x) {
+            x.classList.toggle("hamburgerAnimatie");
+            let overlay = document.getElementById("hamburgerOverlay");
+    
+            if (overlay.classList.contains("show")) {
+                overlay.classList.remove("show");
+                setTimeout(() => {
+                    overlay.style.display = "none";
+                }, 300);
+            } else {
+                overlay.style.display = "block";
+                setTimeout(() => {
+                    overlay.classList.add("show");
+                }, 10);
+            }
+        }
+    </script>
 
 </body>
 </html>
