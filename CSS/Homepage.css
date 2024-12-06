@@ -32,12 +32,7 @@
     margin-right: 150px;
 }
 
-.Hamburger {
-
-}
-
 .HamburgerButton {
-    
     cursor: pointer;
 }
 
@@ -71,4 +66,10 @@
 .hamburgerMenu.active {
     display: block;
     text-align: center;
+}
+
+.HeroImg {
+    background-image: url();
+    background-position: center;
+    background-size: cover;
 }
