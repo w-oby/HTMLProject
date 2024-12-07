@@ -1,7 +1,13 @@
 .NavBar {
     list-style-type: none;
     text-align: center;
-    background-color: lightgreen;
+    background-color: rgb(117, 233, 0);
+}
+
+#Nav {
+    position: fixed;
+    margin-left: 350px;
+    top: 0;
 }
 
 body {
@@ -76,8 +82,11 @@ body {
 .hamburgerMenu {
     list-style-type: none;
     color: white;
-    padding: 75px;
+    padding: 200px;
+    margin-right: 700px;
     background-color: green;
+    text-align: center;
+    display: inline-block;
 }
 
 .heroImg {
@@ -90,7 +99,7 @@ body {
     text-shadow: 3px 3px black;
     position: relative;
     z-index: -1;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .heroText {
@@ -107,9 +116,8 @@ body {
     height: 100%;
     z-index: 500;
     text-align: center;
-    padding-top: 45px;
     transition: opacity 0.3s ease;
-    opacity: 0;
+    opacity: 0%;
 }
 
 .hamburgerMenu a {
@@ -158,7 +166,7 @@ body {
     transition: 0.2s ease;
 }
 
-.card1 {
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
     display: inline-block;
     border: 10px solid greenyellow;
     border-radius: 20px;
@@ -168,94 +176,11 @@ body {
     padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
-}
-
-.card2 {
-    display: inline-block;
-    border: 10px solid greenyellow;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0;
-    margin: 100px;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.card3 {
-    display: inline-block;
-    border: 10px solid greenyellow;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0;
-    margin: 100px;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.card4 {
-    display: inline-block;
-    border: 10px solid greenyellow;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0;
-    margin: 100px;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.card5 {
-    display: inline-block;
-    border: 10px solid greenyellow;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0;
-    margin: 100px;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.card6 {
-    display: inline-block;
-    border: 10px solid greenyellow;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0;
-    margin: 100px;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.card7 {
-    display: inline-block;
-    border: 10px solid greenyellow;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0;
-    margin: 100px;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.card8 {
-    display: inline-block;
-    border: 10px solid greenyellow;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0;
-    margin: 100px;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.cards {
     background-color: aquamarine;
+}
+
+.card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p, .card7 p, .card8 p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .cardahref {
@@ -268,3 +193,10 @@ body {
     color: chocolate;
     transition: 0.3s ease;
 }
+
+body {
+    background-image: url("../Images/heroimage1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
