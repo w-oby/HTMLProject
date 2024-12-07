@@ -1,54 +1,33 @@
 .NavBar {
     list-style-type: none;
     text-align: center;
-    position: sticky;
-    top: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 0px;
     background-color: lightgreen;
 }
 
 body {
-    padding-top: 20px;
     background-color: rgb(0, 106, 255);
 }
 
 .NavBar a {
     text-decoration: none;
     display: inline-block;
-    padding: 5px;
-    border: 5px solid transparent;
+    border: 10px solid transparent;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.NavBar a img {
-    display: inline-block;
-    border: 5px solid transparent;
-
-}
-
-.NavBar a:hover img {
-    background-color: transparent;
 }
 
 .NavBar a:hover {
-    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(65, 144, 140);
+    background-color: rgb(33, 199, 190);
     border-radius: 5px;
 }
 
 .NavLink {
     display: inline-block;
-    margin: 0px;
-    padding-bottom: 25px;
-    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     padding-left: 75px;
     padding-right: 75px;
-    color: black;
 }
-
 
 .NavBar a:hover {
     color: chocolate;
@@ -63,12 +42,11 @@ body {
 
 .hamburgerLi {
     float: right;
-    margin-right: 150px;
 }
 
 .hamburgerButton {
     cursor: pointer;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .Streep1, .Streep2, .Streep3 {
@@ -77,6 +55,10 @@ body {
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
+}
+
+.Streep1:hover, .Streep2:hover, .Streep3:hover {
+    background-color: white;
 }
 
 .hamburgerAnimatie .Streep1 {
@@ -93,14 +75,9 @@ body {
 
 .hamburgerMenu {
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
     color: white;
-}
-
-.hamburgerMenu.active {
-    display: block;
-    text-align: center;
+    padding: 75px;
+    background-color: green;
 }
 
 .heroImg {
@@ -163,7 +140,6 @@ body {
     background-color: cornflowerblue;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
 }
 
 .Kolom1, .Kolom2 {
