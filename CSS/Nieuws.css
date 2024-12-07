@@ -1,0 +1,148 @@
+.NavBar {
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(117, 233, 0);
+}
+
+#Nav {
+    position: fixed;
+    margin-left: 350px;
+    top: 0;
+}
+
+body {
+    background-color: beige;
+}
+
+.NavBar a {
+    text-decoration: none;
+    display: inline-block;
+    border: 10px solid transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.NavBar a:hover {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(33, 199, 190);
+    border-radius: 5px;
+}
+
+.NavLink {
+    display: inline-block;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.NavBar a:hover {
+    color: chocolate;
+    transition: 0.2s ease;
+}
+
+.copyrightFooter {
+    text-align: center;
+    background-color: bisque;
+    display: block;
+}
+
+.hamburgerLi {
+    float: right;
+}
+
+.hamburgerButton {
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.Streep1, .Streep2, .Streep3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.Streep1:hover, .Streep2:hover, .Streep3:hover {
+    background-color: white;
+}
+
+.hamburgerAnimatie .Streep1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.hamburgerAnimatie .Streep2 {
+    opacity: 0;
+}
+
+.hamburgerAnimatie .Streep3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.hamburgerMenu {
+    list-style-type: none;
+    color: white;
+    padding: 200px;
+    margin-right: 700px;
+    background-color: green;
+    text-align: center;
+    display: inline-block;
+}
+
+.hamburgerOverlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    opacity: 0%;
+}
+
+.hamburgerMenu a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: bold;
+}
+
+.hamburgerMenu a:hover {
+    color: chocolate;
+    transition: 0.2s ease;
+}
+
+.hamburgerMenu li {
+    margin: 20px 0px;
+}
+
+.hamburgerMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburgerOverlay.show {
+    display: block;
+    opacity: 1;
+}
+
+.eindpaginaFooter {
+    background-color: cornflowerblue;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Kolom1, .Kolom2 {
+    display: inline-block;
+    padding-left: 150px;
+    padding-bottom: 25px;
+}
+
+.Kolom2 a {
+   text-decoration: none;
+   color: white;
+}
+
+.Kolom2 a:hover {
+    color: chocolate;
+    transition: 0.2s ease;
+}
+

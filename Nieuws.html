@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nieuws</title>
+    <link rel="stylesheet" href="./CSS/Nieuws.css">
+    <link rel="icon" href="./Images/polygon 5 without BG.png">
+</head>
+<body>
+
+    <header>
+        <div>
+            <nav id="Nav">
+                <ul class="NavBar">
+                    <li class="NavLink"><a href="./TOVOvA homepage.html"><img src="./Images/polygon 5 without BG.png" alt="Polygon logo V" height="30px" width="30px"></a></li>
+                    <li class="NavLink"><a href="./Over ons.html">Over ons</a></li>
+                    <li class="NavLink"><a href="./Nieuws.html">Nieuws</a></li>
+                    <li class="NavLink"><a href="">Aanmeldprocedure</a></li>
+                    <li class="NavLink"><a href="">Contact</a></li>
+                    <li class="NavLink hamburgerLi">
+                        <div class="hamburgerButton" onclick="hamburgerAnimatie(this)">
+                            <div class="Streep1"></div>
+                            <div class="Streep2"></div>
+                            <div class="Streep3"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="hamburgerOverlay" id="hamburgerOverlay">
+                    <ul class="hamburgerMenu" id="hamburgerMenu">
+                        <li><a href="./TOVOvA homepage.html">Homepagina</a></li>
+                        <li><a href="./Over ons.html">Over ons</a></li>
+                        <li><a href="./Nieuws.html">Nieuws</a></li>
+                        <li><a href="https://www.whatsapp.com">Programma</a></li>
+                        <li><a href="https://www.whatsapp.com">Schoolvakantie</a></li>
+                        <li><a href="https://www.whatsapp.com">Bijdrage</a></li>
+                        <li><a href="https://www.whatsapp.com">Aanmeldprocedure</a></li>
+                        <li><a href="https://www.whatsapp.com">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content komt hier -->
+
+    <div>
+        <footer class="eindpaginaFooter">
+            <div class="Kolom1">
+                <h3>Contact</h3>
+                <p>Technisch Openbaar Voortgezet Onderwijs van Amsterdam</p>
+                <p>Braijlemaforg 531</p>
+                <p>4321 BA</p>
+                <p>020 1234567</p>
+                <p>infodesk@tovova.nl</p>
+            </div>
+
+            <div class="Kolom2">
+                <h3>Links</h3>
+                <p><a href="./TOVOvA homepage.html">Homepagina</a></p>
+                <p><a href="./Over ons.html">Over ons</a></p>
+                <p><a href="./Nieuws.html">Nieuws</a></p>
+                <p><a href="">Aanmeldprocedure</a></p>
+                <p><a href="">Vakantie</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <div>
+        <footer class="copyrightFooter">Copyright 2024 - Technisch Openbaar Voortgezet Onderwijs van Amsterdam</footer>
+    </div>
+
+    <script>
+        function hamburgerAnimatie(x) {
+            x.classList.toggle("hamburgerAnimatie");
+            let overlay = document.getElementById("hamburgerOverlay");
+    
+            if (overlay.classList.contains("show")) {
+                overlay.classList.remove("show");
+                setTimeout(() => {
+                    overlay.style.display = "none";
+                }, 300);
+            } else {
+                overlay.style.display = "block";
+                setTimeout(() => {
+                    overlay.classList.add("show");
+                }, 10);
+            };
+        };
+    </script>
+
+</body>
+</html>
