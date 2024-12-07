@@ -146,3 +146,33 @@ body {
     transition: 0.2s ease;
 }
 
+.overOnstext {
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.overOnstext h3 {
+    margin-top: 60px;
+}
+
+.overOnstext h1 {
+    padding-top: 150px;
+}
+
+.overOnslinkje {
+    text-decoration: none;
+}
+
+.overOnslinkje:hover {
+    color: chocolate;
+    transition: 0.3s ease;
+}
+
+.overOnslasttext {
+    padding-top: 30px;
+}
+
+.samenwerkingPartners img {
+    padding-top: 20px;
+}
