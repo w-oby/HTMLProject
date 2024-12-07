@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOVOvA</title>
-    <link rel="stylesheet" href="./CSS/Homepage.css">
+    <title>Aanmeldprocedure</title>
+    <link rel="stylesheet" href="./CSS/Aanmeldprocedure.css">
     <link rel="icon" href="./Images/polygon 5 without BG.png">
 </head>
 <body>
@@ -42,68 +42,41 @@
         </div>
     </header>
 
-    <div class="heroImg">
-        <div class="heroText">
-            <h1>Welkom bij de site van TOVOvA!</h1>
-            <h3>Technisch Openbaar Voortgezet Onderwijs van Amsterdam</h3>
-            <p>Bij TOVOvA streven wij naar gelijke leerkansen voor elk leerling. Zo bereiden ze zich op voor de spannende uitdagingen van de grote wereld.</p>
-        </div>
+    <!-- Content komt hier -->
+    <div class="EersteDiv">
+        <h1>Aanmelden bij TOVOvA</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit architecto, eum mollitia sequi dolores quisquam maxime ipsum neque repudiandae a hic et aliquid repellendus nulla animi autem alias? In?<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit delectus mollitia excepturi, commodi quas magnam optio distinctio adipisci est soluta veniam placeat necessitatibus deleniti voluptatibus ipsum ratione quos fuga iusto?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa iure commodi, necessitatibus optio soluta vel enim reiciendis et officiis est sit, doloribus rerum possimus quia esse eaque quasi placeat.</p>
     </div>
-    <section class="cards">
-        <div class="card1">
-            <h4 class="card2content">Quote student</h4>
-            <img src="./Images/Childoncomputer.jpg" alt="Nieuws" width="125px" height="90px">
-            <p class="card1content">'De meesters en juffen staan bereid om mij te helpen'</p>
-            <a href="" class="cardahref">Lees verder</a>
-        </div>
-
-        <div class="card2">
-            <h4 class="card3content">Over ons</h4>
-            <img src="./Images/polygon 5 without BG.png" alt="Over ons" width="125px" height="90px">
-            <p class="card1content">Wie zijn wij en wat doen wij?</p>
-            <a href="" class="cardahref">Lees verder</a>
-        </div>
-
-        <div class="card3">
-            <h4 class="card4content">Nieuws</h4>
-            <img src="./Images/Childrenpic.png" alt="Contact" width="125px" height="90px">
-            <p class="card4content">Goede doelen actie gestart</p>
-            <a href="" class="cardahref">Lees verder</a>
-        </div>
-
-        <div class="card4">
-            <h4 class="card5content">Programma</h4>
-            <img src="./Images/heroimage2.jpg" alt="Over ons" width="125px" height="90px">
-            <p class="card5content">Onderdelen van het schoolprogramma</p>
-            <a href="" class="cardahref">Lees verder</a>
-        </div>
-
-        <div class="card5">
-            <h4 class="card4content">Quote Docent</h4>
-            <img src="./Images/TeacherTeen.jpg" alt="Contact" width="125px" height="90px">
-            <p class="card4content">Hoe wij de leerlingen helpen leren</p>
-            <a href="" class="cardahref">Lees verder</a>
-        </div>
-
-        <div class="card6">
-            <h4 class="card4content">Schoolvakantie en vrije dagen</h4>
-            <img src="./Images/Schoolvakantie.jpg" alt="Contact" width="125px" height="90px">
-            <p class="card4content">Data van vakanties en vrije dagen </p>
-            <a href="" class="cardahref">Lees verder</a>
-        </div>
-
-        <div class="card7">
-            <h4 class="card4content">Bijdrage</h4>
-            <img src="./Images/ouders.jpg" alt="Contact" width="125px" height="90px">
-            <p class="card4content">Wilt u bijdragen aan schoolse activiteiten?</p>
-            <a href="" class="cardahref">Lees verder</a>
-        </div>
-
-        <div class="card8">
-            <h4 class="card4content">Aanmeldprocedure</h4>
-            <img src="./Images/signup icon.png" alt="Contact" width="125px" height="90px">
-            <p class="card4content">Wilt u uw kind aanmelden voor TOVOvA?</p>
-            <a href="" class="cardahref">Lees verder</a>
+    
+    <section id="Formulier">
+        <div>
+            <h2>Aanmeldingsformulier</h2>
+            <form action="#">
+                <label for="NaamInvoeren">Naam:</label>
+                <input type="text" name="Naam_Invoeren" id="NaamInvoeren" required>
+                <br>
+                <label for="EmailInvoeren">E-mailadres:</label>
+                <input type="email" name="Emailadres_Invoeren" id="EmailInvoeren" required>
+                <br>
+                <label for="DatumKeuze">Kies uw datum</label>
+                <select name="DatumKiezen" id="DatumKeuze" required>
+                    <option value="" disabled selected>Kies een datum</option>
+                    <option value="Donderdag 17 oktober">Donderdag 17 oktober</option>
+                    <option value="Vrijdag 18 oktober">Vrijdag 18 oktober</option>
+                    <option value="Zaterdag 19 oktober">Zaterdag 19 oktober</option>
+                </select>
+                <br>
+                <label for="VoorstellingKeuze">Kies uw voorstelling</label>
+                <select name="Moment_Voorstelling" id="VoorstellingKeuze" required>
+                    <option value="" disabled selected>Kies een voorstelling</option>
+                    <option value="Ochtendvoorstelling">Ochtendvoorstelling</option>
+                    <option value="Middagvoorstelling">Middagvoorstelling</option>
+                    <option value="Avondvoorstelling">Avondvoorstelling</option>
+                </select>
+                <br>
+                <label for="ReserverenKnop">Reserveren voorstelling</label>
+                <input type="submit" value="Reserveren" class="ReserverenKnop">
+            </form>
         </div>
     </section>
 
@@ -123,7 +96,7 @@
                 <p><a href="./TOVOvA homepage.html">Homepagina</a></p>
                 <p><a href="./Over ons.html">Over ons</a></p>
                 <p><a href="./Nieuws.html">Nieuws</a></p>
-                <p><a href="">Aanmeldprocedure</a></p>
+                <p><a href="./Aanmeldprocedure.html">Aanmeldprocedure</a></p>
                 <p><a href="">Vakantie</a></p>
             </div>
         </footer>
