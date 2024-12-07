@@ -177,6 +177,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p, .card7 p, .card8 p {

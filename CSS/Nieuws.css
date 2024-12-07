@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: beige;
+    background-color: rgb(255, 255, 240);
 }
 
 .NavBar a {
@@ -146,3 +146,28 @@ body {
     transition: 0.2s ease;
 }
 
+section {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 200px;
+}
+
+section div {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    border: solid black;
+    display: block;
+    background-color: white;
+}
+
+section div:hover p {
+    text-decoration: underline;
+}
+
+section a {
+    text-decoration: none;
+    color: black;
+}
+
+section a:visited {
+    color: black;
+}
