@@ -158,6 +158,10 @@ body {
     border: 2px solid black;
     display: block;
     border-radius: 8px;
+    margin-top: 50px;
+    margin-left: 28%;
+    margin-right: 25%;
+    margin-bottom: 5%;
 }
 
 label, input {
@@ -165,9 +169,6 @@ label, input {
     margin: 10px 0px 5px;
 }
 
-#Formulier h2 {
-    text-align: center;
-}
 
 input, select {
     padding: 10px;
@@ -176,4 +177,13 @@ input, select {
 
 p {
     margin: 20px 0px;
+}
+
+form {
+    margin-left: 38%;
+    margin-right: 25%;
+}
+
+#Formulier h2 {
+    text-align: center;
 }
