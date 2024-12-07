@@ -52,30 +52,55 @@
         <div>
             <h2>Aanmeldingsformulier</h2>
             <form action="#">
-                <label for="NaamInvoeren">Naam:</label>
-                <input type="text" name="Naam_Invoeren" id="NaamInvoeren" required>
-                <br>
-                <label for="EmailInvoeren">E-mailadres:</label>
+                <label for="NaamInvoeren">Voornaam ouder/verzorger:</label>
+                <input type="text" name="Naam_Invoeren" required>
+                
+                <label for="NaamInvoeren">Achternaam ouder/verzorger:</label>
+                <input type="text" name="Naam_Invoeren" required>
+                
+                <label for="TelefoonNummer">Telefoonnummer ouder/verzorger:</label>
+                <input type="tel" name="TelefoonNummerInvoeren" placeholder="+31 612345678" required>
+
+                <label for="EmailInvoeren">E-mailadres ouder/verzorger:</label>
                 <input type="email" name="Emailadres_Invoeren" id="EmailInvoeren" required>
-                <br>
-                <label for="DatumKeuze">Kies uw datum</label>
-                <select name="DatumKiezen" id="DatumKeuze" required>
-                    <option value="" disabled selected>Kies een datum</option>
-                    <option value="Donderdag 17 oktober">Donderdag 17 oktober</option>
-                    <option value="Vrijdag 18 oktober">Vrijdag 18 oktober</option>
-                    <option value="Zaterdag 19 oktober">Zaterdag 19 oktober</option>
+                
+                <label for="GeslachtKiezen">Geslacht ouder/verzorger:</label>
+                <select name="GeslachtKiezen" required>
+                    <option value="" disabled selected>Kies een geslacht</option>
+                    <option value="Heer">Heer</option>
+                    <option value="Mevrouw">Mevrouw</option>
+                    <option value="Wil niet zeggen">Wil niet zeggen</option>
                 </select>
-                <br>
-                <label for="VoorstellingKeuze">Kies uw voorstelling</label>
-                <select name="Moment_Voorstelling" id="VoorstellingKeuze" required>
-                    <option value="" disabled selected>Kies een voorstelling</option>
-                    <option value="Ochtendvoorstelling">Ochtendvoorstelling</option>
-                    <option value="Middagvoorstelling">Middagvoorstelling</option>
-                    <option value="Avondvoorstelling">Avondvoorstelling</option>
+
+                <label for="NaamInvoeren">Voornaam leerling:</label>
+                <input type="text" name="Naam_Invoeren" required>
+                
+                <label for="NaamInvoeren">Achternaam leerling:</label>
+                <input type="text" name="Naam_Invoeren" required>
+
+                <label for="LeeftijdLeerling">Leeftijd leerling:</label>
+                <input type="number" name="LeeftijdInvoeren" min="10" max="18" required>
+                
+                <label for="GeslachtKiezen">Geslacht leerling:</label>
+                <select name="GeslachtKiezen" required>
+                    <option value="" disabled selected>Kies een geslacht</option>
+                    <option value="Heer">Jongen</option>
+                    <option value="Mevrouw">Meisje</option>
+                    <option value="Wil niet zeggen">Wil niet zeggen</option>
                 </select>
-                <br>
-                <label for="ReserverenKnop">Reserveren voorstelling</label>
-                <input type="submit" value="Reserveren" class="ReserverenKnop">
+                
+                <label for="School">Huidig school leerling:</label>
+                <input type="text" name="HuidigSchoolInvoeren" required>
+                
+                <p>Na het versturen van uw gegevens, zal een intakecoordinator van TOVOvA uw aanvraag zo spoedig mogelijk in behandeling nemen. U wordt dan gecontacteerd.</p>
+
+                <label for="checkbox">
+                    Ik ga akkoord met het verzenden van de ingevulde gegevens.
+                    <input type="checkbox" name="BevestigenVerzenden" required>
+                </label>
+
+                <label for="AanmeldenKnop"></label>
+                <input type="submit" value="Aanmelden">
             </form>
         </div>
     </section>
