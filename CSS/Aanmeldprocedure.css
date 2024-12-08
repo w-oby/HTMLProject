@@ -181,3 +181,28 @@ form {
 #Formulier h2 {
     text-align: center;
 }
+
+@media only screen and (max-width: 800px) {
+    #Nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    #Formulier {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+     }
+
+     .Kolom1, .Kolom2 {
+        display: inline-block;
+        padding: auto;
+        margin-right: 150px;
+        text-align: center;
+        }
+
+        .Kolom2 {
+            padding-left: 220px;
+        }
+}

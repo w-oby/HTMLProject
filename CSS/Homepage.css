@@ -192,3 +192,31 @@ body {
     background-color: rgb(0, 106, 255);
 }
 
+@media only screen and (max-width: 800px) {
+    #Nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .Kolom1, .Kolom2 {
+        display: inline-block;
+        padding: auto;
+        margin-right: 150px;
+        text-align: center;
+        }
+
+    .Kolom2 {
+        padding-left: 220px;
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+        margin: 30px;
+        width: 30%;
+    }
+}
