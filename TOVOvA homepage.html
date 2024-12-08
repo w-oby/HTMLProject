@@ -48,6 +48,7 @@
             <p>Bij TOVOvA streven wij naar gelijke leerkansen voor elk leerling. Zo bereiden ze zich op voor de spannende uitdagingen van de grote wereld.</p>
         </div>
     </div>
+
     <section class="cards">
         <div class="card1">
             <h4 class="card2content">Wie zijn wij?</h4>
@@ -121,9 +122,7 @@
         </footer>
     </div>
 
-    <div>
-        <footer class="copyrightFooter">Copyright 2024 - Technisch Openbaar Voortgezet Onderwijs van Amsterdam</footer>
-    </div>
+    <footer class="copyrightFooter">Copyright 2024 - Technisch Openbaar Voortgezet Onderwijs van Amsterdam</footer>
 
     <script>
         function hamburgerAnimatie(x) {
@@ -131,10 +130,11 @@
             let overlay = document.getElementById("hamburgerOverlay");
     
             if (overlay.classList.contains("show")) {
-                overlay.classList.remove("show");
-                setTimeout(() => {
+                    overlay.classList.remove("show");
+                    setTimeout(() => {
                     overlay.style.display = "none";
-                }, 300);
+                    }, 300);
+
             } else {
                 overlay.style.display = "block";
                 setTimeout(() => {

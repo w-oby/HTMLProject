@@ -51,55 +51,55 @@
         <div>
             <h2>Aanmeldingsformulier</h2>
             <form action="#">
-                <label for="NaamInvoeren">Voornaam ouder/verzorger:</label>
-                <input type="text" name="Naam_Invoeren" required>
+                <label for="voornaamInvoeren">Voornaam ouder/verzorger:</label>
+                <input type="text" name="Voornaam_Invoeren" id="voornaamInvoeren" required>
                 
-                <label for="NaamInvoeren">Achternaam ouder/verzorger:</label>
-                <input type="text" name="Naam_Invoeren" required>
+                <label for="achternaamInvoeren">Achternaam ouder/verzorger:</label>
+                <input type="text" name="Achternaam_Invoeren" id="achternaamInvoeren" required>
                 
-                <label for="TelefoonNummer">Telefoonnummer ouder/verzorger:</label>
-                <input type="tel" name="TelefoonNummerInvoeren" placeholder="+31 612345678" required>
+                <label for="telefoonNummerInvoeren">Telefoonnummer ouder/verzorger:</label>
+                <input type="tel" name="TelefoonNummer_Invoeren" placeholder="+31 612345678" id="telefoonNummerInvoeren" required>
 
-                <label for="EmailInvoeren">E-mailadres ouder/verzorger:</label>
-                <input type="email" name="Emailadres_Invoeren" id="EmailInvoeren" required>
+                <label for="emailInvoeren">E-mailadres ouder/verzorger:</label>
+                <input type="email" name="Emailadres_Invoeren" id="emailInvoeren" required>
                 
                 <label for="GeslachtKiezen">Geslacht ouder/verzorger:</label>
-                <select name="GeslachtKiezen" required>
+                <select name="Geslacht_Kiezen" required>
                     <option value="" disabled selected>Kies een geslacht</option>
                     <option value="Heer">Heer</option>
                     <option value="Mevrouw">Mevrouw</option>
                     <option value="Wil niet zeggen">Wil niet zeggen</option>
                 </select>
 
-                <label for="NaamInvoeren">Voornaam leerling:</label>
-                <input type="text" name="Naam_Invoeren" required>
+                <label for="voornaamInvoerenL">Voornaam leerling:</label>
+                <input type="text" name="VoornaamLeerling_Invoeren" id="voornaamInvoerenL" required>
                 
-                <label for="NaamInvoeren">Achternaam leerling:</label>
-                <input type="text" name="Naam_Invoeren" required>
+                <label for="achternaamInvoerenL">Achternaam leerling:</label>
+                <input type="text" name="AchternaamLeerling_Invoeren" id="achternaamInvoerenL" required>
 
-                <label for="LeeftijdLeerling">Leeftijd leerling:</label>
-                <input type="number" name="LeeftijdInvoeren" min="10" max="18" required>
+                <label for="leeftijdInvoeren">Leeftijd leerling:</label>
+                <input type="number" name="Leeftijd_Invoeren" min="10" max="18" id="leeftijdInvoeren" required>
                 
                 <label for="GeslachtKiezen">Geslacht leerling:</label>
-                <select name="GeslachtKiezen" required>
+                <select name="GeslachtLeerling_Kiezen" required>
                     <option value="" disabled selected>Kies een geslacht</option>
                     <option value="Heer">Jongen</option>
                     <option value="Mevrouw">Meisje</option>
                     <option value="Wil niet zeggen">Wil niet zeggen</option>
                 </select>
                 
-                <label for="School">Huidig school leerling:</label>
-                <input type="text" name="HuidigSchoolInvoeren" required>
+                <label for="schoolInvoeren">Huidig school leerling:</label>
+                <input type="text" name="HuidigSchool_Invoeren" id="schoolInvoeren" required>
                 
                 <p>Na het versturen van uw gegevens, zal een intakecoordinator van TOVOvA uw aanvraag zo spoedig mogelijk in behandeling nemen. U wordt dan gecontacteerd.</p>
 
                 <label for="checkbox">
                     Ik ga akkoord met het verzenden van de ingevulde gegevens.
-                    <input type="checkbox" name="BevestigenVerzenden" required>
+                    <input type="checkbox" name="Gegevens_Verzenden" id="checkbox" required>
                 </label>
 
-                <label for="AanmeldenKnop"></label>
-                <input type="submit" value="Aanmelden">
+                <label for="aanmeldenKnop"></label>
+                <input type="submit" value="Aanmelden" id="aanmeldenKnop">
             </form>
         </div>
     </section>
@@ -126,9 +126,7 @@
         </footer>
     </div>
 
-    <div>
         <footer class="copyrightFooter">Copyright 2024 - Technisch Openbaar Voortgezet Onderwijs van Amsterdam</footer>
-    </div>
 
     <script>
         function hamburgerAnimatie(x) {
