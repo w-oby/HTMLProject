@@ -1,19 +1,17 @@
 header {
     display: flex;
     justify-content: start;
-    align-items: end;
+    align-items: center;
 }
 
 .NavBar {
-    list-style-type: none;
     text-align: center;
     background-color: rgb(117, 233, 0);
 }
 
 #Nav {
     position: fixed;
-    margin-left: 350px;
-    top: 0;
+    margin-left: 300px;
 }
 
 .NavBar a {

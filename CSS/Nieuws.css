@@ -1,3 +1,9 @@
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 .NavBar {
     list-style-type: none;
     text-align: center;
@@ -6,8 +12,7 @@
 
 #Nav {
     position: fixed;
-    margin-left: 350px;
-    top: 0;
+    margin-left: 300px;
 }
 
 body {
