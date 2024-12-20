@@ -124,10 +124,15 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.eindpaginaFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Kolom1, .Kolom2 {
-    display: inline-block;
-    padding-left: 150px;
-    padding-bottom: 25px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
 .Kolom2 a {

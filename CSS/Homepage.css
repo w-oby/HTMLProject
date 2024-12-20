@@ -1,3 +1,9 @@
+header {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
 .NavBar {
     list-style-type: none;
     text-align: center;
@@ -140,10 +146,15 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.eindpaginaFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Kolom1, .Kolom2 {
-    display: inline-block;
-    padding-left: 150px;
-    padding-bottom: 25px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
 .Kolom2 a {
@@ -154,6 +165,12 @@
 .Kolom2 a:hover {
     color: chocolate;
     transition: 0.2s ease;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
@@ -199,24 +216,14 @@ body {
 }
 
 @media only screen and (min-width: 200px) and (max-width: 600px) {
-    main {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
+    .eindpaginaFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    
     .Kolom1, .Kolom2 {
-        display: inline-block;
-        padding: auto;
-        margin-right: 150px;
-        text-align: center;
-        }
-
-    .Kolom2 {
-        padding-left: 220px;
-    }
-
-    .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
-        margin: 30px;
-        width: 30%;
+        padding-left: 250px;
+        padding-right: 250px;
     }
 }
