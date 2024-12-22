@@ -99,7 +99,7 @@
 
                 <label for="aanmeldenKnop"></label>
                 <!-- <input type="submit" value="Aanmelden" id="aanmeldenKnop"> -->
-                <button type="submit" form="AanmeldenForm" id="openButton" value="Aanmelden" onclick="knopBevestiging()">Aanmelden!</button>
+                <button type="submit" form="AanmeldenForm" id="aanmeldenKnop" value="Aanmelden" onclick="knopBevestiging()">Aanmelden!</button>
 
             </form>
         </div>
@@ -144,37 +144,65 @@
         <footer class="copyrightFooter">Copyright 2024 - Technisch Openbaar Voortgezet Onderwijs van Amsterdam</footer>
 
     <script>
-        function hamburgerAnimatie(x) {
-            x.classList.toggle("hamburgerAnimatie");
-            let overlay = document.getElementById("hamburgerOverlay");
-    
-            if (overlay.classList.contains("show")) {
-                overlay.classList.remove("show");
-                setTimeout(() => {
-                    overlay.style.display = "none";
-                }, 300);
-            } else {
-                overlay.style.display = "block";
-                setTimeout(() => {
-                    overlay.classList.add("show");
-                }, 10);
-            };
+    function hamburgerAnimatie(x) {
+        x.classList.toggle("hamburgerAnimatie");
+        let overlay = document.getElementById("hamburgerOverlay");
+
+        if (overlay.classList.contains("show")) {
+            overlay.classList.remove("show");
+            setTimeout(() => {
+                overlay.style.display = "none";
+            }, 300);
+        } else {
+            overlay.style.display = "block";
+            setTimeout(() => {
+                overlay.classList.add("show");
+            }, 10);
         };
-        
-        // Pop Up code
-        function knopBevestiging() {
-        document.getElementById("PopUp").classList.remove("PopupHide");
-        document.getElementById("PopUp").classList.add("PopupShow");
-        document.getElementById("openButton").style.display = "none";
     };
 
-    function knopWegklikken() {
-        document.getElementById("PopUp").classList.remove("PopupShow");
-        document.getElementById("PopUp").classList.add("PopupHide");
-        document.getElementById("openButton").style.display = "block";
-        window.location.reload();
+// Pop Up code
+function knopBevestiging() {
+    document.getElementById("PopUp").classList.remove("PopupHide");
+    document.getElementById("PopUp").classList.add("PopupShow");
+    document.getElementById("aanmeldenKnop").style.display = "none";
+};
+
+function knopWegklikken() {
+    console.log("debug line");
+    document.getElementById("PopUp").classList.remove("PopupShow");
+    document.getElementById("PopUp").classList.add("PopupHide");
+    document.getElementById("aanmeldenKnop").style.display = "block";
+    window.location.reload();
+};
+
+// Form Submission code
+let form = document.querySelector("#AanmeldenForm");
+
+async function StuurData(e) {
+    e.preventDefault();
+
+    let formData = new FormData(form);
+
+    try {
+        let response = await fetch("#", {
+            method: "POST",
+            body: formData,
+        });
+
+        if (response.ok) {
+            let result = await response.json();
+            console.log(result);
+            knopBevestiging();
+        }
+
+    } catch (error) {
     };
-    </script>
+};
+
+form.addEventListener("submit", StuurData);
+
+</script>
 
 </body>
 </html>
