@@ -49,7 +49,7 @@
     <section id="Formulier">
         <div>
             <h2>Aanmeldingsformulier</h2>
-            <form action="#">
+            <form action="#" id="AanmeldenForm">
                 <label for="voornaamInvoeren">Voornaam ouder/verzorger:</label>
                 <input type="text" name="Voornaam_Invoeren" id="voornaamInvoeren" required>
                 
@@ -98,9 +98,25 @@
                 </label>
 
                 <label for="aanmeldenKnop"></label>
-                <input type="submit" value="Aanmelden" id="aanmeldenKnop">
+                <!-- <input type="submit" value="Aanmelden" id="aanmeldenKnop"> -->
+                <button type="submit" form="AanmeldenForm" id="openButton" value="Aanmelden" onclick="knopBevestiging()">Aanmelden!</button>
+
             </form>
         </div>
+    </section>
+
+    <!-- Pop Up code -->
+    <!-- <button id="openButton" onclick="knopBevestiging()">Klik mij!</button> -->
+
+    <section id="PopUp" class="PopupHide">
+
+        <div class="BevestigingPopup">
+            <button type="button" onclick="knopWegklikken()" class="knopWegklikken"></button>
+            <h3 class="BevestigingHeading3">Dank voor het invullen van het formulier. Uw gegevens worden verstuurd en verwerkt.</h3>
+            <img src="./Images/checkmarktransparent.png" alt="Checkmark" class="CheckmarkPic" width="100px">
+            <p class="BevestigingParagraph">U kunt dit pagina veilig verlaten.</p>
+        </div>
+
     </section>
 
     <div>
@@ -144,6 +160,20 @@
                 }, 10);
             };
         };
+        
+        // Pop Up code
+        function knopBevestiging() {
+        document.getElementById("PopUp").classList.remove("PopupHide");
+        document.getElementById("PopUp").classList.add("PopupShow");
+        document.getElementById("openButton").style.display = "none";
+    };
+
+    function knopWegklikken() {
+        document.getElementById("PopUp").classList.remove("PopupShow");
+        document.getElementById("PopUp").classList.add("PopupHide");
+        document.getElementById("openButton").style.display = "block";
+        window.location.reload();
+    };
     </script>
 
 </body>
