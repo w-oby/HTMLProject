@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="button test.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<button id="openButton" onclick="knopBevestiging()">Klik mij!</button>
+
+<section id="PopUp" class="PopupHide">
+
+    <div class="BevestigingPopup">
+        <button type="button" onclick="knopWegklikken()" class="knopWegklikken"></button>
+        <h3 class="BevestigingHeading3">Dank voor het invullen van het formulier. Uw gegevens worden verstuurd en verwerkt.</h3>
+        <img src="./testimg/checkmarktransparent.png" alt="Checkmark" class="CheckmarkPic" width="100px">
+        <p class="BevestigingParagraph">U kunt dit pagina veilig verlaten.</p>
+    </div>
+
+</section>
+
+<script>
+
+    function knopBevestiging() {
+        document.getElementById("PopUp").classList.remove("PopupHide");
+        document.getElementById("PopUp").classList.add("PopupShow");
+        document.getElementById("openButton").style.display = "none";
+    };
+
+    function knopWegklikken() {
+        document.getElementById("PopUp").classList.remove("PopupShow");
+        document.getElementById("PopUp").classList.add("PopupHide");
+        document.getElementById("openButton").style.display = "block";
+        window.location.reload();
+    };
+
+</script>
+
+</body>
+</html>

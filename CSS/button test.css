@@ -1,0 +1,73 @@
+.BevestigingPopup {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+    flex-direction: column;
+    text-align: center;
+    border: 5px solid gray;
+    border-radius: 8px;
+    margin-left: 750px;
+    margin-top: 250px;
+}
+
+.BevestigingsPopup p {
+    width: 100px;
+}
+
+.CrossButton {
+    position: fixed;
+    top: 230px;
+    left: 1145px;
+    background-color: white;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.PopupShow {
+    display: flex;
+    transition: ease-in 1s;
+}
+
+.PopupHide {
+    display: none;
+}
+
+#knopWegklikken {
+    display: none;
+    background: transparent;
+    border: none;
+}
+
+.knopWegklikken {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-image: url("testimg/crossbutton.png");
+    background-size: cover;
+    translate: 200px -150px;
+}
+
+@keyframes PopIn {
+    0% {
+        opacity: 0; transform: scale(0.1);
+    }
+
+    100% {
+        opacity: 1; transform: scale(1); 
+    }
+}
+
+#PopUp {
+    animation: PopIn 500ms ease-in-out alternate;
+}
