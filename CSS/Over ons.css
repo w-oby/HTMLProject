@@ -127,9 +127,6 @@ body {
     background-color: cornflowerblue;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.eindpaginaFooter {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,25 +182,116 @@ body {
     padding-bottom: 30px;
 }
 
-@media only screen and (max-width: 800px) {
-    #Nav {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 200px) and (max-width: 600px) {
-    body {
-        text-align: center;
-        margin: auto;
+/* Media Query uitgeprobeerd maar nav bar gedraagt zich vreemd en 
+rechter kolom in eindpaginafooter schuift steeds verder weg */
+@media only screen and (width < 800px) { 
+    .eindpaginaFooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
     }
 
     .personeelFoto {
-        width: 400px;
+        width: 100%;
     }
 
-    .Kolom1, .Kolom2 {
-    display: inline-block;
-    padding: auto;
-    margin-right: 150px;
+    .Kolom1 {
+        width: 25vw;
+        text-align: left;
+        padding-left: 450px;
+    }
+
+    .Kolom2 {
+        width: 50vw;
+        text-align: left;
     }
 }
+
+/* Code voor responsive nav bar, uitgprobeerd zonder resultaat */
+
+/* @media screen only screen and (width: < 800px) {
+
+@layer reset {
+    .navbar, .navbar-brand, .menu, .ResponsiveLink {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      }
+    
+    .navbar {
+      display: block;
+      }
+    
+    /* body {
+      line-height: 1;
+      } */
+    
+    /* .menu {
+      list-style: none;
+      }
+    }
+    
+  @layer navbar {
+    nav {
+      background: #1a1a1a;
+      font-family: system-ui;
+      position: relative;
+      }
+      
+      nav a {
+        display: block;
+        text-decoration: none;
+        color: white;
+      }
+      nav .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: min(1500px, 100% - 3em);
+        margin-inline: auto;
+      }
+      nav .navbar .navbar-brand {
+        font-size: 1.5rem;
+        padding-block: 0.5em;
+      }
+      nav .navbar ul {
+        display: flex;
+      }
+      nav .navbar ul li a {
+        padding: 1em;
+      }
+      nav .navbar .toggleMenu {
+        align-self: center;
+        aspect-ratio: 1;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        padding: 0;
+        cursor: pointer;
+      }
+    }
+    nav .toggleMenu {
+      display: none;
+    }
+     */
+
+    /* @media screen and (width <= 800px) {
+      .menu {
+        display: none;
+        position: absolute;
+        background: #333333;
+      }
+      .menu.active {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      nav .toggleMenu {
+        display: block;
+      }
+    } */
