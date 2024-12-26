@@ -127,9 +127,6 @@ body {
     background-color: cornflowerblue;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.eindpaginaFooter {
     display: flex;
     justify-content: center;
     align-items: center;
