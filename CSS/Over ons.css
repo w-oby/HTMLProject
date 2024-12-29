@@ -99,7 +99,7 @@ body {
     z-index: 500;
     text-align: center;
     transition: opacity 0.3s ease;
-    opacity: 0%;
+    opacity: 0;
 }
 
 .hamburgerMenu a {
@@ -184,7 +184,7 @@ body {
 
 /* Media Query uitgeprobeerd maar nav bar gedraagt zich vreemd en 
 rechter kolom in eindpaginafooter schuift steeds verder weg */
-@media only screen and (width < 800px) { 
+@media only screen and (max-width: 800px) { 
     .eindpaginaFooter {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -209,9 +209,10 @@ rechter kolom in eindpaginafooter schuift steeds verder weg */
     }
 }
 
-/* Code voor responsive nav bar, uitgprobeerd zonder resultaat */
+/*
+Code voor responsive nav bar, uitgprobeerd zonder resultaat
 
-/* @media screen only screen and (width: < 800px) {
+@media screen only screen and (width: < 800px) {
 
 @layer reset {
     .navbar, .navbar-brand, .menu, .ResponsiveLink {
@@ -227,11 +228,11 @@ rechter kolom in eindpaginafooter schuift steeds verder weg */
       display: block;
       }
     
-    /* body {
+    body {
       line-height: 1;
-      } */
+      }
     
-    /* .menu {
+    .menu {
       list-style: none;
       }
     }
@@ -278,9 +279,9 @@ rechter kolom in eindpaginafooter schuift steeds verder weg */
     nav .toggleMenu {
       display: none;
     }
-     */
 
-    /* @media screen and (width <= 800px) {
+
+    @media screen and (width <= 800px) {
       .menu {
         display: none;
         position: absolute;
@@ -294,4 +295,5 @@ rechter kolom in eindpaginafooter schuift steeds verder weg */
       nav .toggleMenu {
         display: block;
       }
-    } */
+    }
+*/

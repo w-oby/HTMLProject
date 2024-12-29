@@ -100,7 +100,7 @@ body {
     z-index: 500;
     text-align: center;
     transition: opacity 0.3s ease;
-    opacity: 0%;
+    opacity: 0;
 }
 
 .hamburgerMenu a {
@@ -174,5 +174,4 @@ body {
     padding: auto;
     margin-right: 150px;
     }
-
 }

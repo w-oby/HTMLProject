@@ -99,7 +99,7 @@ body {
     height: 100%;
     text-align: center;
     transition: opacity 0.3s ease;
-    opacity: 0%;
+    opacity: 0;
 }
 
 .hamburgerMenu a {
@@ -173,7 +173,7 @@ section a:visited {
     color: black;
 }
 
-/* @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     #Nav {
         display: none;
     }
@@ -190,7 +190,7 @@ section a:visited {
     padding: auto;
     margin-right: 150px;
     }
-} */
+}
 
 @keyframes FadeIn {
     0% {
