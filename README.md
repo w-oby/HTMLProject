@@ -1,6 +1,10 @@
-# TOVOvA - Technisch Openbaar Voortgezet Onderwijs van Amsterdam
-![Logo van TOVOvA](https://github.com/user-attachments/assets/29557c09-4691-4449-83dc-b6cfb67ffd38)
+<h1>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/29557c09-4691-4449-83dc-b6cfb67ffd38" alt="Logo van TOVOvA" width="128">
+  <br>TOVOvA - Technisch Openbaar Voortgezet Onderwijs van Amsterdam
+</h1>
 
+#
 
 TOVOvA is een voortgezet middelbaar school gevestigd in Amsterdam Centrum, opgericht door een groep onderwijsprofessionals en docenten. TOVOvA is een modern en innovatief school die alle aandacht heeft voor technologie en het toepassen van de technologische ontwikkelingen. De leerlingen van TOVOvA leren in een veilig en stimulerend omgeving hoe zij de kracht van technologie kunnen omarmen en toepassen in real-life scenario's. De leerlingen leren bij TOVOvA o.a. zoveel mogelijk zelfstandig om kunnen gaan met elektronische en analoge apparaten. Zo weten de leerlingen hoe zij hardware- en softwarerproblemen kunnen oplossen, hoe een onderdeel zelfstandig vervangen wordt en weten zij klanten op afstand te helpen met het oplossen van technische problemen, wat ook wel "troubleshooting" genoemd wordt.
 
