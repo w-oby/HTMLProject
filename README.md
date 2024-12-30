@@ -8,6 +8,7 @@ TOVOvA werkt samen met verschillende partners, die het benutten en gebruiken van
 
 Ieder school heeft webpagina's nodig om ook online te kunnen functioneren. Zo kan TOVOvA haar nieuws publiceren, aanmeldingen in behandeling nemen en communicatie tussen partijen faciliteren. 
 
+
 In dit repository vindt u de benodigde webpagina's en de gerelateerde elementen om online zichtbaar te kunnen zijn. De repository bestaat uit de volgende HTML pagina's:
 - TOVOvA homepage
 - Over ons
