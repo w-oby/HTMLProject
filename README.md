@@ -8,7 +8,7 @@ TOVOvA is een voortgezet middelbaar school gevestigd in Amsterdam Centrum, opger
 
 De leerlingen worden onderwezen en begeleid door opgeleide docenten. De docenten hebben relevante en actuele ervaring met technologische aspecten. Zij bezitten over certificaten, wat kwalitatief onderwijsstof voor de leerlingen garandeert. TOVOvA werkt samen met verschillende partners, die het benutten en gebruiken van de nieuwste leerstof en gereedschappen mogelijk maakt. De partners bestaan o.a. uit Boom Uitgevers, Instruct, Noordhoff Uitgeverij en Van Dijk Uitgeverij. Dit unieke collaboratie zorgt ervoor dat de leerlingen toegang hebben tot de nieuwste computerhardware, technologieën en methodiek. Na afloop kunnen de leerlingen hun kennis goed en optimaal toepassen in de arbeidsmarkt.
 
-Ieder school heeft webpagina's nodig om ook online te kunnen functioneren. Zo kan TOVOvA haar nieuws publiceren, aanmeldingen in behandeling nemen en communicatie tussen partijen faciliteren. In dit repository vindt u de benodigde webpagina's en de gerelateerde elementen om online zichtbaar te kunnen zijn. De repository bestaat uit de volgende HTML pagina's:
+Ieder school heeft webpagina's nodig om online te kunnen functioneren. Zo kan TOVOvA haar nieuws publiceren, aanmeldingen in behandeling nemen en communicatie tussen partijen faciliteren. In dit repository vindt u de benodigde webpagina's en de gerelateerde elementen om online zichtbaar te kunnen zijn. De repository bestaat uit de volgende HTML pagina's:
 - TOVOvA homepage
 - Over ons
 - Nieuws
