@@ -27,8 +27,9 @@ Binnen de map CSS zijn .CSS bestanden te vinden. De .CSS bestanden zijn gelinkt 
 7. U krijgt nu een venster te zien. Klik nogmaals op "Uitpakken" of "Extract". Het ZIP bestand is nu uitgepakt in uw gekozen map.
 8. U kunt nu op een HTML paginabestand dubbelklikken. Dit wordt dan automatisch geopend in een browser.
 
-Ziet u de optie "Alles uitpakken" of "Extract all" niet, volg dan de volgende stappen:
-1. Download het programma 7zip via https://www.7-zip.org/a/7z2409-x64.exe.
+<ins>Ziet u de optie "Alles uitpakken" of "Extract all" niet, volg dan de volgende stappen:<ins>
+
+1. Download het programma 7zip via [7zip Download](https://www.7-zip.org/a/7z2409-x64.exe).
 2. Klik verder op "Installeren" of "Install". Het programma 7zip wordt nu geinstalleerd op uw apparaat.
 3. Selecteer het ZIP bestand en klik daarna op uw rechtermuisknop.
 4. Navigeer naar 7-Zip en klik daarna op "Hier uitpakken" of "Extract here". Het ZIP bestand is nu uitgepakt in uw map.
