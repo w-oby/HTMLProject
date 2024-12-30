@@ -17,7 +17,7 @@ Ieder school heeft webpagina's nodig om ook online te kunnen functioneren. Zo ka
 - Schoolvakantie
 - Contact
 
-- 
+
 Binnen de map CSS zijn .CSS bestanden te vinden. De .CSS bestanden zijn gelinkt met de HTML pagina's. Binnen de HTML pagina's vindt u ook een stukje JavaScript code. Verder vindt u een aantal foto's in de .JPG, .JPEG en .PNG formaat. De foto's worden gebruikt om de pagina's vorm te geven en de nodige context te verduidelijken.
 
 
