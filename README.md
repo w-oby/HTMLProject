@@ -19,13 +19,14 @@ Ieder school heeft webpagina's nodig om online te kunnen functioneren. Zo kan TO
 Binnen de map CSS zijn .CSS bestanden te vinden. De .CSS bestanden zijn gelinkt met de HTML pagina's. Binnen de HTML pagina's vindt u ook een stukje JavaScript code. Verder vindt u een aantal foto's in de .JPG, .JPEG en .PNG formaten. De foto's worden gebruikt om de pagina's vorm te geven en de nodige context te verduidelijken.
 
 # :pencil:Instructies
-1. Klik op groene "<> Code" knop en kies daarna "Download ZIP".
+1. Klik op de groene "<> Code" knop en kies daarna "Download ZIP".
 2. Download het ZIP bestand naar een map naar keuze
 4. Navigeer naar uw gedownloade ZIP bestand en selecteer het ZIP bestand.
 5. Na het selecteren van het ZIP bestand, klik op uw rechtermuisknop.
 6. Klik op "Alles uitpakken" of "Extract all" (Ziet u dit optie niet, ga dan naar de instructies onderaan de pagina).
 7. U krijgt nu een venster te zien. Klik nogmaals op "Uitpakken" of "Extract". Het ZIP bestand is nu uitgepakt in uw gekozen map.
 8. U kunt nu op een HTML paginabestand dubbelklikken. Dit wordt dan automatisch geopend in een browser.
+
 
 Ziet u de optie "Alles uitpakken" of "Extract all" niet, volg dan de volgende stappen.
 1. Download het programma 7zip via https://www.7-zip.org/a/7z2409-x64.exe.
