@@ -18,7 +18,7 @@ Ieder school heeft webpagina's nodig om online te kunnen functioneren. Zo kan TO
 
 Binnen de map CSS zijn .CSS bestanden te vinden. De .CSS bestanden zijn gelinkt met de HTML pagina's. Binnen de HTML pagina's vindt u ook een stukje JavaScript code. Verder vindt u een aantal foto's in de .JPG, .JPEG en .PNG formaten. De foto's worden gebruikt om de pagina's vorm te geven en de nodige context te verduidelijken.
 
-# :pencil: Instructies
+# :pencil:Instructies
 1. Klik op groene "<> Code" knop en kies daarna "Download ZIP".
 2. Download het ZIP bestand naar een map naar keuze
 4. Navigeer naar uw gedownloade ZIP bestand en selecteer het ZIP bestand.
