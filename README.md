@@ -1,6 +1,6 @@
 <h1>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/29557c09-4691-4449-83dc-b6cfb67ffd38" alt="Logo van TOVOvA" width="150">
+  <img src="https://github.com/user-attachments/assets/29557c09-4691-4449-83dc-b6cfb67ffd38" alt="Logo van TOVOvA" width="180">
   <br>TOVOvA - Technisch Openbaar Voortgezet Onderwijs van Amsterdam
 </h1>
 
